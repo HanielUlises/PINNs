@@ -28,7 +28,7 @@ def run(cfg: ModulusConfig) -> None:
         cfg=cfg.arch.fully_connected,
     )
 
-    nodes = we.make_nodes() + [wave_net.make_node()]
+    nodes = we.make_nodes() + [wave_net.make_node(name="wave_network")]
 
     x_symbol = Symbol("x")
     t_symbol = Symbol("t")
