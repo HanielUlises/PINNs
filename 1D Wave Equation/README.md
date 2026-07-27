@@ -13,8 +13,8 @@ The analytical reference solution is $u(x, t) = \sin(x)\,\big(\cos(t) + \sin(t)\
 
 ## Result
 
-The animation below compares the trained PINN prediction against the exact solution over one full period. Training converged to a final loss of ~$6\times10^{-7}$ after 10,000 steps.
+Following the post-processing style of [`post_processing_1dwave_main.ipynb`](post_processing_1dwave_main.ipynb), the animation below shows rainbow `plot_trisurf` surfaces of the solution over the $(x, t)$ plane — the **predicted** $u(x, t)$, the **exact** solution, and their **error** — rotating so the full surfaces are visible. Training converged to a final loss of ~$6\times10^{-7}$ after 10,000 steps, and the pointwise error stays on the order of $10^{-3}$.
 
-![1D wave equation: PINN vs exact solution](wave_1D.gif)
+![1D wave equation PINN post-processing: predicted, exact, and error surfaces](wave_1D_postproc.gif)
 
-A higher-quality MP4 version is available at [`wave_1D.mp4`](wave_1D.mp4).
+A higher-quality MP4 version is available at [`wave_1D_postproc.mp4`](wave_1D_postproc.mp4).
